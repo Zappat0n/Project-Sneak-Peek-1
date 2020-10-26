@@ -412,3 +412,58 @@ footer {
   margin: 10px 20px;
   justify-content: space-around;
 }
+
+.opinion-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 3rem auto;
+  overflow: hidden;
+}
+
+.opinion-form * {
+  font-family: 'imperial', serif;
+  font-size: 1.125rem;
+  margin-top: 5px;
+}
+
+.opinion-form h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 10px;
+}
+
+.opinion-form fieldset {
+  width: 100%;
+  margin-right: 2rem;
+  border-radius: 5px;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.opinion-form .user-data {
+  text-align: center;
+}
+
+.opinion-form .user-data label {
+  margin-right: 1rem;
+}
+
+.opinion-form textarea {
+  width: 100%;
+}
+
+.opinion-form select {
+  font-family: 'imperial', serif;
+}
+
+.opinion-form #submit {
+  margin-left: 3rem;
+  font-size: larger;
+  font-weight: bold;
+  float: right;
+  clear: both;
+}

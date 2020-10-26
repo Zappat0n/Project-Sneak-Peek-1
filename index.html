@@ -204,6 +204,45 @@
             </aside> 
         </div>
     </article>
+
+    <!--
+        Beggining of form
+    -->
+
+    <form class="opinion-form">
+        <h2>
+            Please let us know your opinion. 
+        </h2>
+        <fieldset class="user-data">
+            <label>
+                Name:
+                <input type="text" name="user_name" maxlength="20" required>
+            </label>
+            <label class="email">
+                Email:
+                <input type="email" name="user_email" maxlength="20" required>
+            </label>
+        </fieldset>
+        <fieldset class="user-opinion">
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" placeholder="Type your comment here…" maxlength="250" rows ="4" required></textarea>
+        
+            <label >What is your overall opinion about this article?
+                <select name="opinion">
+                    <option value="" selected>positive</option>
+                    <option value="negative">negative</option>
+                    <option value="neutral">neutral</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="user-submit">
+            <label>
+                I want to subscribe to the newsletter
+                <input type="checkbox" name="subscribe">
+            </label>
+            <input type="submit" id="submit" value="Send">    
+        </fieldset>
+    </form>
     
     <section class="style-flex">
         <div class="other-articles footer-item">
