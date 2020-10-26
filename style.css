@@ -430,7 +430,7 @@ footer {
   margin-top: 5px;
 }
 
-.opinion-form legend {
+.opinion-form h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 10px 10px;
@@ -444,11 +444,11 @@ footer {
   margin-top: 1rem;
 }
 
-.opinion-form .user-data{
+.opinion-form .user-data {
   text-align: center;
 }
 
-.opinion-form .user-data label{
+.opinion-form .user-data label {
   margin-right: 1rem;
 }
 

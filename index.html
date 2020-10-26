@@ -210,9 +210,9 @@
     -->
 
     <form class="opinion-form">
-        <legend>
+        <h2>
             Please let us know your opinion. 
-        </legend>
+        </h2>
         <fieldset class="user-data">
             <label>
                 Name:
@@ -225,11 +225,11 @@
         </fieldset>
         <fieldset class="user-opinion">
             <label for="comment">Comment</label>
-            <textarea name="comment" placeholder="Type your comment here…" maxlength=250 rows ="4" required></textarea>
+            <textarea name="comment" id="comment" placeholder="Type your comment here…" maxlength=250 rows ="4" required></textarea>
         
             <label >What is your overall opinion about this article?
-                <select name="opinion" required>
-                    <option value="positive" selected>positive</option>
+                <select name="opinion">
+                    <option value="" selected>positive</option>
                     <option value="negative">negative</option>
                     <option value="neutral">neutral</option>
                 </select>
