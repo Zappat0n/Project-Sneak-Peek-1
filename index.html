@@ -209,29 +209,39 @@
         Beggining of form
     -->
 
-    <form>
-        <fieldset>
+    <form class="opinion-form">
+        <legend>
+            Please let us know your opinion. 
+        </legend>
+        <fieldset class="user-data">
             <label>
-                name
-                <input type="text" name="user_name" max=20 required>
+                Name:
+                <input type="text" name="user_name" maxlength=20 required>
             </label>
-            <label>
-                email
-                <input type="email" name="user_email" max=20 required>
+            <label class="email">
+                Email:
+                <input type="email" name="user_email" maxlength=20 required>
             </label>
         </fieldset>
-        <textarea name="comment" placeholder="Type your comment here…" max=250 required></textarea>
-        <label>
-            What is your overall opinion about this article?
-            <input type="radio" name="opinion" value="positive" checked>
-            <input type="radio" name="opinion" value="negative" checked>
-            <input type="radio" name="opinion" value="neutral" checked>
-        </label>
-        <label>
-            I want to subscribe to the newsletter
-            <input type="checkbox" name="subscribe">
-        </label>
-        <input type="submit" value="Send">
+        <fieldset class="user-opinion">
+            <label for="comment">Comment</label>
+            <textarea name="comment" placeholder="Type your comment here…" maxlength=250 required></textarea>
+            
+            <label >What is your overall opinion about this article?
+                <select name="opinion" required>
+                    <option value="positive" selected>positive</option>
+                    <option value="negative">negative</option>
+                    <option value="neutral">neutral</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="user-submit">
+            <label>
+                I want to subscribe to the newsletter
+                <input type="checkbox" name="subscribe">
+            </label>
+            <input type="submit" id="submit" value="Send">    
+        </fieldset>
     </form>
     
     <section class="style-flex">
